@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
+   Categories | Rent Ease
+  </title>
+<style>
+   :root {
+    --pink:#e84d91;
+    --deep:#b92768;
+    --pale:#fff0f6;
+    --light:#fff9fc;
+    --ink:#35232d;
+    --muted:#765f6b
+}
+
+* {
+    box-sizing:border-box
+}
+
+body {
+    margin:0;
+    font:16px Arial,sans-serif;
+    color:var(--ink);
+    background:var(--light);
+    line-height:1.6
+}
+
+header {
+    background:white;
+    box-shadow:0 3px 14px #7d315015
+}
+
+.nav {
+    max-width:1120px;
+    margin:auto;
+    padding:14px 22px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:18px
+}
+
+.logo {
+    font-size:1.45rem;
+    font-weight:800;
+    color:var(--deep);
+    text-decoration:none;
+    white-space:nowrap
+}
+
+nav {
+    display:flex;
+    flex-wrap:wrap;
+    gap:5px
+}
+
+nav a,.dropbtn {
+    color:var(--ink);
+    text-decoration:none;
+    padding:9px 10px;
+    border:0;
+    background:none;
+    font-size:.92rem;
+    cursor:pointer;
+    border-radius:8px
+}
+
+nav a:hover,.dropbtn:hover {
+    color:var(--deep);
+    background:var(--pale)
+}
+
+.dropdown {
+    position:relative
+}
+
+.menu {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    min-width:170px;
+    background:white;
+    box-shadow:0 8px 22px #57203a20;
+    border-radius:10px;
+    padding:8px;
+    z-index:5
+}
+
+.menu a {
+    display:block
+}
+
+.dropdown:hover .menu,.dropdown:focus-within .menu {
+    display:block
+}
+
+main {
+    max-width:1100px;
+    margin:30px auto;
+    padding:0 22px 45px
+}
+
+h1,h2 {
+    color:var(--deep)
+}
+
+.lead {
+    background:var(--pale);
+    padding:28px;
+    border-radius:18px
+}
+
+.cards {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+    margin-top:22px
+}
+
+.card {
+    background:white;
+    border:1px solid #f5d7e5;
+    border-radius:15px;
+    overflow:hidden
+}
+
+.card img {
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    display:block
+}
+
+.card div {
+    padding:16px
+}
+
+.card h2 {
+    font-size:1.25rem;
+    margin:0
+}
+
+.btn {
+    display:inline-block;
+    background:var(--pink);
+    color:white;
+    text-decoration:none;
+    padding:10px 16px;
+    border-radius:24px;
+    font-weight:bold
+}
+
+footer {
+    background:#3a2030;
+    color:#fff2f8;
+    padding:25px;
+    text-align:center
+}
+
+footer a {
+    color:#ffd3e5
+}
+
+@media(max-width:760px) {
+    .nav {
+    align-items:flex-start;
+    flex-direction:column
+}
+
+.cards {
+    grid-template-columns:1fr
+}
+
+
+}
+  </style>
+<style>
+/* Extra styling: background photos, Bootstrap-friendly spacing and hover effects */
+body {background-color:#fff7fb;}
+header {position:relative;z-index:20;}
+nav a, .dropbtn, .btn, .box, .card, details, .gallery-item {transition:transform .25s ease, box-shadow .25s ease, background-color .25s ease;}
+nav a:hover, .dropbtn:hover {transform:translateY(-2px);background:#ffe0ee;}
+.btn:hover {transform:translateY(-3px);box-shadow:0 8px 18px #b9276850;color:white;}
+.box:hover, .card:hover, details:hover, .gallery-item:hover {transform:translateY(-5px);box-shadow:0 14px 30px #8b3d652b;}
+.intro {background:linear-gradient(90deg,rgba(50,20,36,.86),rgba(85,36,60,.45)),url('images/image 5.jpg') center/cover no-repeat !important;color:white;min-height:255px;display:flex;flex-direction:column;justify-content:center;box-shadow:0 10px 28px #7d31502a;}
+.intro h1,.intro h2,.intro p {color:white !important;}
+.intro .btn {align-self:flex-start;}
+.photo-strip {margin:25px 0;border-radius:18px;overflow:hidden;box-shadow:0 8px 25px #7d315026;}
+.photo-strip img {width:100%;height:270px;object-fit:cover;display:block;transition:transform .35s;}
+.photo-strip:hover img {transform:scale(1.035);}
+.photo-strip figcaption {background:#fff0f6;padding:12px 20px;color:#8d2459;font-weight:bold;}
+@media(max-width:700px){.intro{min-height:210px;padding:24px !important}.photo-strip img{height:200px}}
+</style><style>
+/* Simple, tidy page improvements */
+main {max-width:1050px;margin:28px auto;padding:0 20px 42px;}
+.intro {min-height:185px !important;padding:30px !important;border-radius:18px !important;}
+.intro h1 {font-size:clamp(1.8rem,4vw,2.5rem) !important;}
+.intro p {max-width:620px;line-height:1.6;}
+.box,.card,.panel,details {box-shadow:0 3px 12px rgba(90,34,61,.07);}
+.box:hover,.card:hover,details:hover,.gallery-item:hover {transform:translateY(-3px) !important;box-shadow:0 8px 18px rgba(90,34,61,.13) !important;}
+.simple-contact-title{text-align:center;padding:20px 10px 4px;color:#8b2d5d;}
+.simple-contact-title h1{font-size:2.3rem;margin-bottom:8px;}
+.simple-contact-title p{color:#66505c;}
+.contact-form-panel{max-width:700px !important;margin:18px auto 10px !important;padding:26px !important;}
+@media(max-width:650px){.intro{padding:22px !important;min-height:160px !important}.contact-form-panel{padding:18px !important}}
+</style></head>
+<body>
+<header>
+<div class="nav">
+<a class="logo" href="index.html">
+     ♡ Rent Ease
+    </a>
+<nav>
+<a href="index.html">
+      Home
+     </a>
+<a href="aboutus.html">
+      About Us
+     </a>
+<div class="dropdown">
+<button class="dropbtn">
+       Categories ▾
+      </button>
+<div class="menu">
+<a href="#apartments">
+        Apartments
+       </a>
+<a href="#houses">
+        Houses
+       </a>
+<a href="#rooms">
+        Single Rooms
+       </a>
+</div>
+</div>
+<a href="properties.html">
+      Properties
+     </a>
+<a href="gallery.html">
+      Gallery
+     </a>
+<a href="landlord.html">
+      Landlord
+     </a>
+<a href="faq.html">
+      FAQ
+     </a>
+<a href="contact.html">
+      Contact
+     </a>
+</nav>
+</div>
+</header>
+<main>
+<section class="lead">
+<h1>
+     Browse rental categories
+    </h1>
+<p>
+     Choose the kind of place you are looking for. Use the Categories dropdown in the menu to jump to a section.
+    </p>
+</section>
+<div class="cards">
+<article class="card" id="apartments">
+<img alt="Apartment interior" src="images/image 1.jpg"/>
+<div>
+<h2>
+       Apartments
+      </h2>
+<p>
+       Comfortable flats for individuals, couples and small families.
+      </p>
+<a class="btn" href="properties.html">
+       View properties
+      </a>
+</div>
+</article>
+<article class="card" id="houses">
+<img alt="House exterior" src="images/image 4.jpg"/>
+<div>
+<h2>
+       Houses
+      </h2>
+<p>
+       More room to relax, work and spend time with family.
+      </p>
+<a class="btn" href="properties.html">
+       View properties
+      </a>
+</div>
+</article>
+<article class="card" id="rooms">
+<img alt="Simple bedroom" src="images/image 5.jpg"/>
+<div>
+<h2>
+       Single Rooms
+      </h2>
+<p>
+       Simple, practical spaces for students and individuals.
+      </p>
+<a class="btn" href="properties.html">
+       View properties
+      </a>
+</div>
+</article>
+</div>
+</main>
+<footer>
+<strong>
+    ♡ Rent Ease
+   </strong>
+<p>
+    Helping you find a place to call home.
+   </p>
+<a href="contact.html">
+    Contact us
+   </a>
+</footer>
+</body>
+</html>
